@@ -52,3 +52,11 @@ The project is structured to ensure modularity:
 ---
 ## Key Findings
 Our analysis confirms that while both solvers share the same underlying methodology, bvp4c is generally preferable for its computational reliability and robustness. In contrast, bvp5c becomes more advantageous when high-level accuracy is required and the solution is sufficiently smooth.
+---
+## References
+
+1. MATLAB Documentation: [bvp4c](https://www.mathworks.com/help/matlab/ref/bvp4c.html) & [bvp5c](https://www.mathworks.com/help/matlab/ref/bvp5c.html)
+
+2. Shampine, L.F., M.W. Reichelt, and J. Kierzenka. Solving Boundary Value Problems for Ordinary Differential Equations in MATLAB with bvp4c. MATLAB File Exchange, 2000.
+3. A. Spielauer and E.B. Weinmuller. ¨ Numerical solution of boundary value problems in ordinary differential equations with time and space singularities. Institute for Analysis and Scientific Computing, Vienna, University of Technology, 2015.
+
