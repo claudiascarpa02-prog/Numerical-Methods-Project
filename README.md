@@ -19,13 +19,19 @@ Key areas of focus include **residual control**, **computational efficiency**, a
 ```text
 ├── code/
 │   ├── examples/     # Standard test cases for solver verification
-│   ├── exercises/    # Complex applications (Bratu's problem, Gas dynamics)
+│   ├── exercises/    # Complex applications (Bratu's problem, Gas dynamics,...)
 │   └── GUI/          # Interactive environment for performance exploration
 ├── docs/
 │   ├── Solving BVP for ODE in MATLAB with bvp4c.pdf  # Reference paper for project methodology and examples
 │   └── report.pdf   # Full technical report
 └── README.md
 ```
+
+## Implementation Details
+The project is structured to ensure modularity:
+* **Problem Re-formulation**: All examples and exercises are implemented as standalone functions, re-formulating the mathematical problems described in the reference paper.
+* **Main Controller**: The `bvp_app.m` script (or notebook) acts as the central controller, calling these specific problem formulations to execute the `bvp4c` and `bvp5c` solvers and compare their results.
+* **Specialized Techniques**: For specific complex cases—such for example those with singularities or three point bvp—the project employs advanced strategies like Continuation, Separation, etc...
 
 ## Solvers Comparison
 | Feature | bvp4c | bvp5c |
